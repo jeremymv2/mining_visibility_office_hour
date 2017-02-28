@@ -57,7 +57,7 @@ Examples of using the search:
  - event_type: converge AND status: failure
  - event_type: user AND event_action: deleted
 
-**Important** In addition to the Search criteria, select the time range to filter search results:
+**Important:** In addition to the Search criteria, select the time range to filter search results:
 
 ![Time Range](./images/time_range.png)
 
