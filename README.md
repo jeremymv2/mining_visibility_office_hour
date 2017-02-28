@@ -2,7 +2,7 @@
 
 Mining Chef Automate's Visibility data for fun and profit.
 
-# Automate + ELK = <3
+# Automate + ELK = ![heart](./images/heart.png =80x80)
 Automate utilizes the Elasticsearch, Logstash, Kibana stack for long term indexing and archiving of a myriad of interesting metadata.
 
 You can get a sense of what sort of metadata is available via the default charts and graphs on Automate's Workflow and Nodes tabs.
