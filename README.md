@@ -40,6 +40,9 @@ For a health status overview page:
 Elasticsearch has a similar health page:
 `https://your-automate-server.test/elasticsearch/_cluster/health?pretty=true`
 
+To get started, mining go to:
+`https://your-automate-server.test/kibana`
+
 When mining data, you will typically loop over this progression of steps:
  - Discover
  - Visualize
