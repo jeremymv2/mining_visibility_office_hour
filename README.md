@@ -27,6 +27,8 @@ However, if you look under the hood, there is a whole lot more data available..
   - Converge status
   - Stack trace of any failures
 
+Fields that are unindexed cannot be searched.  They have a greyed out magnifying glass icon next to them.
+
 With all of that information at your disposal, it is relatively easy to create a really functional dashboard:
 
 ![Example Dashboard](./images/example_dashboard.png)
