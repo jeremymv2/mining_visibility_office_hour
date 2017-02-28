@@ -104,7 +104,7 @@ Click on the 'Dashboard' tab, then:
  - Select one of your saved Vizs
 
  ![Adding to Dashboard](./images/adding_to_dash.png)
- - Rinse and Repeat until you have the dashboard the way you like
+ - Rinse and Repeat until you have the dashboard the way you like and have fun spelunking!
 
 ## External Elasticsearch
 
