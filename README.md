@@ -35,10 +35,10 @@ With all of that information at your disposal, it is relatively easy to create a
 Kibana is the visualization interface for the data in Elasticsearch.
 
 For a health status overview page:
-https://your-automate-server.test/kibana/status
+`https://your-automate-server.test/kibana/status`
 
 Elasticsearch has a similar health page:
-https://your-automate-server.test/elasticsearch/_cluster/health?pretty=true
+`https://your-automate-server.test/elasticsearch/_cluster/health?pretty=true`
 
 When mining data, you will typically loop over this progression of steps:
  - Discover
@@ -77,7 +77,7 @@ Creating a Pie Chart:
 
 ![Select Viz Type](./images/select_viz_type.png)
 - Select New or Saved search.  Use the `event_type: *` Search.
-- Select Bucket: 'Split Slices'
+- Select Bucket: `Split Slices`
 - Set an aggregation field of `event_action` like the following:
 
 ![Aggregation](./images/aggregation.png)
@@ -108,6 +108,6 @@ Click on the 'Dashboard' tab, then:
 
 ## External Elasticsearch
 
-https://docs.chef.io/setup_visibility_chef_automate.html#use-an-external-elasticsearch-cluster-optional
+[https://docs.chef.io/setup_visibility_chef_automate.html#use-an-external-elasticsearch-cluster-optional](https://docs.chef.io/setup_visibility_chef_automate.html#use-an-external-elasticsearch-cluster-optional)
 
 Chef Automate uses Elasticsearch to store its data, and the default Chef Automate install includes a single Elasticsearch service. This is sufficient to run production work loads; however for greater data retention and perhaps performance, we recommend using a multi-node Elasticsearch cluster with replication and sharding to store and protect your data.
