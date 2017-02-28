@@ -7,7 +7,7 @@ Automate utilizes the Elasticsearch, Logstash, Kibana stack for long term indexi
 
 You can get a sense of what sort of metadata is available via the default charts and graphs on Automate's Workflow and Nodes tabs.
 
-If you look under the hood, there is a whole lot more data available..
+However, if you look under the hood, there is a whole lot more data available..
 
 ![Example Event](./images/example_event.png)
 
@@ -27,27 +27,27 @@ If you look under the hood, there is a whole lot more data available..
   - Converge status
   - Stack trace of any failures
 
-With all that information, it's easy to create a really functional dashboard:
+With all of that information at your disposal, it is relatively easy to create a really functional dashboard:
 
 ![Example Dashboard](./images/example_dashboard.png)
 
 # Kibana
 Kibana is the visualization interface for the data in Elasticsearch.
 
-You can get see a status overview page:
+For a health status overview page:
 https://your-automate-server.test/kibana/status
 
-For elasticsearch, you can view similar:
+Elasticsearch has a similar health page:
 https://your-automate-server.test/elasticsearch/_cluster/health?pretty=true
 
-When mining data, you typically will loop over this progression of steps:
+When mining data, you will typically loop over this progression of steps:
  - Discover
  - Visualize
  - Add to Dashboard
  - Repeat
 
 ### Discover
-Click on the 'Discover' tab and you will get a time sorted list of the most recent events in Elasticsearch.
+Click on the 'Discover' tab and you will get a time sorted list of events in Elasticsearch that match your search criteria and within your search time-range window.
 
 You can modify the search criteria or begin browsing the events.
 
@@ -57,13 +57,13 @@ Examples of using the search:
  - event_type: converge AND status: failure
  - event_type: user AND event_action: deleted
 
-** Important ** Select the time range to filter search results:
+**Important** In addition to the Search criteria, select the time range to filter search results:
 
-![Example Dashboard](./images/time_range.png)
+![Time Range](./images/time_range.png)
 
 Give your search a name and Save the search.
 
-![Example Dashboard](./images/save_search.png)
+![Save Search](./images/save_search.png)
 
 ### Visualize
 
@@ -72,19 +72,19 @@ Visualize the search results by clicking the 'Visualize' tab next.
 Creating a Pie Chart:
 - Click 'create new visualization'
 
-![Example Dashboard](./images/new_viz.png)
+![New Visualization](./images/new_viz.png)
 - Select a visualization type: 'Pie chart'
 
-![Example Dashboard](./images/select_viz_type.png)
+![Select Viz Type](./images/select_viz_type.png)
 - Select New or Saved search.  Use the `event_type: *` Search.
 - Select Bucket: 'Split Slices'
 - Set an aggregation field of `event_action` like the following:
 
-![Example Dashboard](./images/aggregation.png)
+![Aggregation](./images/aggregation.png)
 
 This will create a new Pie Chart visualization with each a slice/bucket for every `event_action` type indexed.
 
-![Example Dashboard](./images/event_type_pie.png)
+![Event Type Pie Chart](./images/event_type_pie.png)
 
 You can easily apply this pattern to other searches and fields as well.
 
@@ -97,13 +97,13 @@ Click on the 'Dashboard' tab, then:
 
  - Click 'New Dashboard'
 
- ![Example Dashboard](./images/new_dash.png)
+ ![New Dashboard](./images/new_dash.png)
  - Click 'Add Visualization'
 
- ![Example Dashboard](./images/add_viz.png)
+ ![Add Visualization](./images/add_viz.png)
  - Select one of your saved Vizs
 
- ![Example Dashboard](./images/adding_to_dash.png)
+ ![Adding to Dashboard](./images/adding_to_dash.png)
  - Rinse and Repeat until you have the dashboard the way you like
 
 ## External Elasticsearch
