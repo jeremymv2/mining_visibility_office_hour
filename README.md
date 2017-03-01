@@ -62,6 +62,8 @@ Examples of using the search:
  - event_type: converge AND status: failure
  - event_type: user AND event_action: deleted
 
+Search syntax uses [Apache Lucene](http://lucene.apache.org/core/3_0_3/queryparsersyntax.html)
+
 **Important:** In addition to the Search criteria, select the time range to filter search results:
 
 ![Time Range](./images/time_range.png)
