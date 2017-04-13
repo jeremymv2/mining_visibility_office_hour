@@ -9,7 +9,7 @@ You can get a sense of what sort of metadata is available via the default charts
 
 However, if you look under the hood, there is a whole lot more data available..
 
-![Example Event](./images/example_event.png)
+![Example Event](https://raw.githubusercontent.com/jeremymv2/mining_visibility_office_hour/master/images/example_event.png)
 
 - Chef Server object modifications
   - Roles
