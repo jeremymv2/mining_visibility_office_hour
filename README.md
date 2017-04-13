@@ -31,7 +31,7 @@ Fields that are unindexed cannot be searched.  They have a greyed out magnifying
 
 With all of that information at your disposal, it is relatively easy to create a really functional dashboard:
 
-![Example Dashboard](./images/example_dashboard.png)
+![Example Dashboard](https://raw.githubusercontent.com/jeremymv2/mining_visibility_office_hour/master/images/example_dashboard.png)
 
 # Kibana
 Kibana is the visualization interface for the data in Elasticsearch.
@@ -66,11 +66,11 @@ Search syntax uses [Apache Lucene](http://lucene.apache.org/core/3_0_3/querypars
 
 **Important:** In addition to the Search criteria, select the time range to filter search results:
 
-![Time Range](./images/time_range.png)
+![Time Range](https://raw.githubusercontent.com/jeremymv2/mining_visibility_office_hour/master/images/time_range.png)
 
 Give your search a name and Save the search.
 
-![Save Search](./images/save_search.png)
+![Save Search](https://raw.githubusercontent.com/jeremymv2/mining_visibility_office_hour/master/images/save_search.png)
 
 ### Visualize
 
@@ -79,19 +79,19 @@ Visualize the search results by clicking the 'Visualize' tab next.
 Creating a Pie Chart:
 - Click 'create new visualization'
 
-![New Visualization](./images/new_viz.png)
+![New Visualization](https://raw.githubusercontent.com/jeremymv2/mining_visibility_office_hour/master/images/new_viz.png)
 - Select a visualization type: 'Pie chart'
 
-![Select Viz Type](./images/select_viz_type.png)
+![Select Viz Type](https://raw.githubusercontent.com/jeremymv2/mining_visibility_office_hour/master/images/select_viz_type.png)
 - Select New or Saved search.  Use the `event_type: *` Search.
 - Select Bucket: `Split Slices`
 - Set an aggregation field of `event_action` like the following:
 
-![Aggregation](./images/aggregation.png)
+![Aggregation](https://raw.githubusercontent.com/jeremymv2/mining_visibility_office_hour/master/images/aggregation.png)
 
 This will create a new Pie Chart visualization with each a slice/bucket for every `event_action` type indexed.
 
-![Event Type Pie Chart](./images/event_type_pie.png)
+![Event Type Pie Chart](https://raw.githubusercontent.com/jeremymv2/mining_visibility_office_hour/master/images/event_type_pie.png)
 
 You can easily apply this pattern to other searches and fields as well.
 
@@ -104,13 +104,13 @@ Click on the 'Dashboard' tab, then:
 
  - Click 'New Dashboard'
 
- ![New Dashboard](./images/new_dash.png)
+ ![New Dashboard](https://raw.githubusercontent.com/jeremymv2/mining_visibility_office_hour/master/images/new_dash.png)
  - Click 'Add Visualization'
 
- ![Add Visualization](./images/add_viz.png)
+ ![Add Visualization](https://raw.githubusercontent.com/jeremymv2/mining_visibility_office_hour/master/images/add_viz.png)
  - Select one of your saved Vizs
 
- ![Adding to Dashboard](./images/adding_to_dash.png)
+ ![Adding to Dashboard](https://raw.githubusercontent.com/jeremymv2/mining_visibility_office_hour/master/images/adding_to_dash.png)
  - Rinse and Repeat until you have the dashboard the way you like
  - Happy Spelunking!
 
