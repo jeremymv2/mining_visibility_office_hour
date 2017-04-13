@@ -100,7 +100,7 @@ Give the visualization a name and Save it.
 ### Add to Dashboard
 Once you have a Search and associated Visualization defined, it's time to add them to a Dashboard!
 
-Click on the 'Dashboard' tab, then:
+Click on the 'Dashboard' tab then:
 
  - Click 'New Dashboard'
 
